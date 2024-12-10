@@ -1,0 +1,409 @@
+<!-- <h1>Motor Insurance Page</h1> -->
+
+<div class="page-container">
+  <!-- Left Section -->
+  <div class="left-section">
+    <h1>
+      Vehicle insurance
+      <span>that is right for you.</span>
+    </h1>
+    <div class="award">
+      <img src="assets/motor-insurance.img/best-motor-insurer.png" alt="Award Image" class="award-image" />
+      <div>
+        <h4>Award from Consumers Asia's Most Trusted Brand</h4>
+        <h3>Asia’s Most Trusted Brand 2022 – General Insurance</h3>
+      </div>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <img src="assets/motor-insurance.img/affordable-premiuims.png" alt="Affordable Icon" />
+        <span>Affordable Premiums</span>
+      </div>
+      <div class="feature">
+        <img src="assets/motor-insurance.img/superfast-claims.png" alt="Superfast Claims Icon" />
+        <span>Superfast Claims</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Section -->
+  <div class="right-section">
+    <form (ngSubmit)="onSubmit()" #insuranceForm="ngForm">
+      <div class="form-header">
+        <button class="tab active">
+          <img src="assets/motor-insurance.img/car1-icon.png" alt="Car Icon" />
+          Car Insurance <br />
+          <span>Starting from ₹2094*</span>
+        </button>
+        <button class="tab">
+          <img src="assets/motor-insurance.img/bike-icon.png" alt="Bike Icon" />
+          Bike Insurance <br />
+          <span>Starting from ₹538*</span>
+        </button>
+      </div>
+      <div class="form-group">
+        <label for="vehicleNumber">Vehicle registration number*</label>
+        <input
+          type="text"
+          id="vehicleNumber"
+          name="vehicleNumber"
+          class="form-control"
+          placeholder="Enter vehicle number"
+          ngModel
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile number*</label>
+        <input
+          type="text"
+          id="mobile"
+          name="mobile"
+          class="form-control"
+          placeholder="Enter mobile number"
+          ngModel
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-control"
+          placeholder="Enter email"
+          ngModel
+          required
+        />
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" name="terms" ngModel required />
+        <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="updates" name="updates" ngModel />
+        <label for="updates">
+          I want to receive updates on
+          <img src="assets/motor-insurance.img/whatsup.png" alt="WhatsApp" />
+        </label>
+      </div>
+      <button type="submit" class="btn">Get Quote</button>
+    </form>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="about-section">
+  <div class="about-text">
+    <h1>About vehicle insurance</h1>
+    <p>
+      Vehicle insurance or motor insurance is meant for cars, two-wheelers, and other road vehicles.
+      A motor package policy protects the insured vehicle against the damages caused due to accidents and natural disasters.
+    </p>
+    <p>
+      In addition to the own vehicle damage, motor vehicle insurance also provides the mandatory coverage for third-party liabilities.
+    </p>
+    <p>
+      Simply put, a comprehensive vehicle insurance allows for worry-free drives by curbing your vehicle repair expenses and helping you adhere to the law when on the road.
+    </p>
+  </div>
+  <div class="about-image">
+    <img src="assets/motor-insurance.img/about-vehicle-insurance.png" alt="Vehicle Insurance" />
+  </div>
+</div>
+
+
+<header>
+  <h1>Types of vehicle insurance coverage in India</h1>
+</header>
+<section class="insurance-types">
+  <div class="card">
+    <img src="assets/motor-insurance.img/comprehensive-motor.png" alt="Comprehensive motor insurance icon">
+    <h2>Comprehensive motor insurance</h2>
+    <p>A comprehensive vehicle insurance policy provides coverage against the third-party legal liabilities as well as the losses or damages to the insured vehicle during an accident or mishap. 
+      It covers the vehicle against natural and man-made disasters, including road accidents, fire, theft, earthquake, storm, flood etc.</p>
+    <h4>Recommended for:Vehicle owners who want all-rounder protection for their vehicle.</h4>
+  </div>
+  <div class="card">
+    <img src="assets/motor-insurance.img/standalone-motor.png" alt="Standalone OD cover icon">
+    <h2>Standalone OD cover</h2>
+    <p>Introduced by the IRDAI, the standalone Own Damage (OD) cover policies allow the vehicle owners to get coverage against the losses or damages caused to their vehicle due to natural or man-made disasters. 
+      This type of policy can be purchased by those who already have a third-party cover from a different or the same insurer.</p>
+    <h4>Recommended for:Vehicle owners who want all-rounder protection for their vehicle.</h4>
+  </div>
+  <div class="card">
+    <img src="assets/motor-insurance.img/third-party-motor.png" alt="Third-party motor insurance icon">
+    <h2>Third-party motor insurance</h2>
+      <p>Third-party motor insurance is mandatory in India as per the law. It protects the policyholder against legal liabilities arising due to an accident involving his/her vehicle.
+         It means that in case an insured vehicle causes bodily injuries, death or property damage to a third-party, the insurer will take care of the legal liability.</p>
+      <h4>Recommended for: As this doesn’t cover the vehicle itself, only third party cover is not recommended for any vehicle. Even if you hardly take your vehicle out on the road, there’s still risk of theft and parking damages. 
+        If you choose this type of policy, you’ll have to pay for any damages to your vehicle yourself.</h4>
+  </div>
+</section>
+
+
+<!-- Sticky image element -->
+<img class="sticky-img" src="assets/motor-insurance.img/General insurance/Chat.png" alt="Chat icon">
+
+
+<!-- table  -->
+<div class="compare-plans">
+  <h1>Compare ICICI Lombard motor insurance plans</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Coverage and Benefits</th>
+        <th>Comprehensive Motor Insurance</th>
+        <th>Standalone OD Cover</th>
+        <th>Third-Party Motor Insurance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plan of plans">
+        <td>{{ plan.coverage }}</td>
+        <td>
+          <span [class.green-check]="plan.comprehensive" [class.red-cross]="!plan.comprehensive"></span>
+        </td>
+        <td>
+          <span [class.green-check]="plan.standalone" [class.red-cross]="!plan.standalone"></span>
+        </td>
+        <td>
+          <span [class.green-check]="plan.thirdParty" [class.red-cross]="!plan.thirdParty"></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--  features  img  -->
+
+<div class="features-container">
+  <h1>Features and benefits of ICICI Lombard motor insurance</h1>
+  <div class="features-grid">
+    <!-- Feature 1 -->
+    <div class="feature-card">
+      <img src="assets/motor-insurance.img/4300-network-garages.png" alt="13500+ network garages" class="feature-icon" />
+      <h3>13500+ network garages</h3>
+      <ul>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Hassle-free cashless repairs across India
+        </li>
+      </ul>
+     
+    </div>
+
+    <!-- Feature 2 -->
+ <div class="col-md-4 col-sm-4">
+    <div class="feature-card">
+      <img src="assets/motor-insurance.img/il-take-care-app.png" alt="IL Take Care app" class="feature-icon" />
+      <h3>IL Take Care app</h3>
+      <ul>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Instant policy issuance
+        </li>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Quick claim settlement
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- Feature 3 -->
+    <div class="feature-card">
+      <img src="assets/motor-insurance.img/add-ons.png" alt="Unique add-ons" class="feature-icon" />
+      <h3>Unique add-ons</h3>
+      <ul>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Instant policy issuance
+        </li>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Quick claim settlement
+        </li>
+      </ul>
+      
+    </div>
+    <br>
+
+    <!-- Feature 4 -->
+    <div class="feature-card">
+      <img src="assets/motor-insurance.img/customised-covers.png" alt="Customised covers" class="feature-icon" />
+      <h3>Customised covers</h3>
+      <ul>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Instant policy issuance
+        </li>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Quick claim settlement
+        </li>
+      </ul>
+    </div>
+
+    <!-- Feature 5 -->
+    <div class="feature-card">
+      <img src="assets/motor-insurance.img/no-claim-bonus.png" alt="No claim bonus transfer" class="feature-icon" />
+      <h3>No claim bonus transfer</h3>
+      <ul>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Avoid losing NCB, transfer it easily
+        </li>
+      </ul>
+      <!-- <ul>
+        <li>✔ Avoid losing NCB, transfer it easily</li>
+      </ul> -->
+    </div>
+
+    <!-- Feature 6 -->
+    <div class="feature-card">
+      <img src="assets/motor-insurance.img/headphone.png" alt="Reliable customer support" class="feature-icon" />
+      <h3>Reliable customer support</h3>
+      <ul>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Instant policy issuance
+        </li>
+        <li>
+          <img
+            class="tick-icon"
+            src="assets/motor-insurance.img/right-click.png"
+            alt="Right Tick"
+          />
+          Quick claim settlement
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="container">
+  <h1>What is covered by ICICI Lombard motor insurance?</h1>
+  <div class="tabs">
+    <div class="tab active" id="inclusions-tab">Inclusions</div>
+    <div class="tab" id="exclusions-tab">Exclusions</div>
+  </div>
+  <div class="content" id="inclusions-content">
+    <div class="item">
+      <div class="item-icon">✔️</div>
+      <div class="item-text">
+        <strong>Loss or damage due to natural disasters</strong>
+        <p>Any damage to your vehicle due to natural disasters such as earthquakes, floods, cyclones and storms, rockslides and landslides, hailstorms, frosts, etc. will be covered by us.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-icon">✔️</div>
+      <div class="item-text">
+        <strong>Loss or damage against man-made disasters</strong>
+        <p>Losses or damages to your insured vehicle caused due to man-made disasters including theft, fire, riot, strike, road accident, terrorist activity, and any damage caused during transit by road, rail, inland waterway, lift, elevator, or air will be covered by us.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-icon">✔️</div>
+      <div class="item-text">
+        <strong>Personal accident cover</strong>
+        <p>
+          A <a href="#">Personal Accident (PA) cover</a> of ₹15 lakh will be available for the registered owner-driver of the insured vehicle and an optional PA cover of ₹2 lakh will be available for co-passengers at an extra premium.
+        </p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-icon">✔️</div>
+      <div class="item-text">
+        <strong>Third-party legal liability</strong>
+        <p>We provide protection against legal liabilities arising due to an accident involving your vehicle, resulting in bodily injuries, death, or property damage to a third party.</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- Exclusions Tab -->
+
+
+
+<p-tabView>
+  <!-- Inclusions Tab -->
+  <p-tabPanel header="Inclusions" [selected]="true">
+    <h2>What is covered by ICICI Lombard motor insurance?</h2>
+    <div class="content">
+      <ul>
+        <li>
+          <i class="pi pi-check-circle"></i>
+          <strong>Loss or damage due to natural disasters:</strong> Any damage to your vehicle due to natural disasters such as earthquakes, floods, cyclones and storms, rockslides, hailstorms, frost, etc. will be covered.
+        </li>
+        <li>
+          <i class="pi pi-check-circle"></i>
+          <strong>Loss or damage against man-made disasters:</strong> Losses due to theft, fire, riots, accidents, and damage during transit by road, rail, air, etc.
+        </li>
+        <li>
+          <i class="pi pi-check-circle"></i>
+          <strong>Personal accident cover:</strong> A PA cover of ₹15 lakh for the owner-driver, and an optional PA cover for co-passengers.
+        </li>
+        <li>
+          <i class="pi pi-check-circle"></i>
+          <strong>Third-party legal liability:</strong> Protection against legal liabilities resulting from accidents.
+        </li>
+      </ul>
+    </div>
+  </p-tabPanel>
+
+  <!-- Exclusions Tab -->
+  <p-tabPanel header="Exclusions">
+    <h2>What is not covered by ICICI Lombard motor insurance?</h2>
+    <div class="content">
+      <ul>
+        <li><i class="pi pi-times-circle"></i> Damage due to wear and tear or ageing of the vehicle.</li>
+        <li><i class="pi pi-times-circle"></i> Damage or loss while driving without a valid license.</li>
+        <li><i class="pi pi-times-circle"></i> Damages when the vehicle is used for a purpose it's not meant for.</li>
+        <li><i class="pi pi-times-circle"></i> Loss due to depreciation of the vehicle.</li>
+        <li><i class="pi pi-times-circle"></i> Damage due to mechanical or electrical breakdowns.</li>
+        <li><i class="pi pi-times-circle"></i> Loss/damage due to war, mutiny, or nuclear risk.</li>
+      </ul>
+    </div>
+  </p-tabPanel>
+</p-tabView>
+
+

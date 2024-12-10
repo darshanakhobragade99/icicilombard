@@ -1,0 +1,592 @@
+
+  /* Main Container */
+  .page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color:#00305b;
+  }
+  
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .left-section h1 {
+    font-size:48 px;
+    color:white;
+    margin-bottom: 1rem;
+  }
+  
+  .award {
+    background-color: #004a80;
+    padding: 15px 30px;
+    display: flex;
+    border-radius: 12px;
+    align-items: center;
+    margin-bottom: 1rem;
+  } 
+  .award h4 {
+    color: white;
+  }
+  .award h3 {
+    color: white;
+  }
+  .award {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between image and text */
+  }
+  .award div{
+    display: block;
+    unicode-bidi: isolate;
+  }
+  
+  .award-image {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    object-fit: contain;
+  }
+  
+  
+  .vehicle-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem 0;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color:white;
+  }
+  
+  .feature img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* Right Section */
+  .right-section {
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  /* .form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  } */
+  .form-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* .tab {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: #f4f4f9;
+    border: none;
+    cursor: pointer;
+  } */
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* .tab.active {
+    background-color: #ff6600;
+    color: #fff;
+  } */
+  .tab img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .tab span {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid orange;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .checkbox-group img {
+    width: 60px;
+    height: 20px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .links {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .links a {
+    color: #043f7a;
+    text-decoration: none;
+  }
+  
+    
+  
+  
+  /* .form-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .tab img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .tab span {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid orange;
+    font-weight: bold;
+  } */
+  
+  /* Styling the About Section */
+  /* .about-section {
+    background-color: #ffffff;
+    padding: 2rem 0;
+  }
+  
+  .container {
+    /* position: fixed; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 1rem;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+   */
+  
+  
+  
+  
+  
+   /* About Section */
+  .about-section {
+    display: flex;
+    align-items: center; /* Vertically aligns content */
+    justify-content: space-between; /* Push text and image to sides */
+    gap: 20px; /* Space between text and image */
+    margin-top: 50px; /* Add space from the section above */
+    padding: 20px;
+    background-color:#ffffff; /* Light background color for visibility */
+  }
+  
+  .about-text {
+    flex: 1; /* Text takes up one part of the space */
+    font-size: 16px; /* Adjust text size */
+    line-height: 1.6; /* Better readability */
+    color: #333; /* Dark text color for contrast */
+  }
+  
+  .about-image {
+    flex: 1; /* Image takes up one part of the space */
+    text-align: right; /* Align image to the right */
+  }
+  
+  .about-image img {
+    max-width: 100%; /* Ensure image scales properly */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+  }
+  
+  /* For Responsive Design */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column; /* Stack text and image vertically on smaller screens */
+      text-align: center; /* Center-align content */
+    }
+  
+    .about-image {
+      text-align: center; /* Center-align the image on smaller screens */
+    }
+  }
+  
+  
+  /* cart text  */
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    background-color: white;
+    padding: 20px 0;
+  }
+  
+  .insurance-types {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 90px;
+    margin-bottom: 30px;
+  }
+  
+  .card h2 {
+    color: #0c0d0d;
+    font-size: 18px;
+  }
+  .card p {
+    color: #555;
+  
+  }
+  
+  .card h4 {
+    color: #004a80;
+  }
+  
+  /* .card strong {
+    color:rgba(4, 4, 69, 0.793);
+  } */
+  /* Sticky image styles */
+  .sticky-img {
+    position: fixed; /* Keeps the image in a fixed position */
+    bottom: 20px;    /* Distance from the bottom of the viewport */
+    right: 20px;     /* Distance from the right of the viewport */
+    width: 50px;     /* Adjust size as needed */
+    height: auto;    /* Maintain aspect ratio */
+    z-index: 1000;   /* Ensures it stays on top of other elements */
+    cursor: pointer; /* Makes it look clickable (optional) */
+  }
+  
+  .sticky-img:hover {
+    transform: scale(1.1); /* Optional: Adds a hover effect */
+    transition: transform 0.2s;
+  }
+  
+  
+  /* for table deta */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  thead th {
+    background-color:#dddccb;
+    padding: 10px;
+    text-align: left;
+   
+  }
+  
+  tbody td {
+    padding: 10px;
+    text-align: center;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+  
+  .green-check::before {
+    content: '✔';
+    color: green;
+    font-size: 1.2em;
+  }
+  
+  .red-cross::before {
+    content: '✖';
+    color: red;
+    font-size: 1.2em;
+  }
+  
+  .compare-plans {
+    margin: 20px auto;
+    max-width: 1300px;
+    height: 560px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* features */
+  
+
+  .features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    text-align: center; /* Ensure heading is centered */
+  }
+  
+  .features-grid {
+    display: flex; /* Use flexbox for alignment */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center items horizontally */
+    gap: 40px; /* Space between items */
+  }
+  
+  .feature-card {
+    background: #ffffff;
+    /* border: 1px solid #e0e0e0; */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center; /* Center text within each card */
+    width: 300px; /* Ensure all cards are the same width */
+    box-shadow: 0 2px 4px rgba(250, 248, 248, 0.1); /* Optional: add a subtle shadow for better appearance */
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px; /* Center the image and add space below */
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center; /* Center the list items */
+  }
+  
+  li {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: rgb(10, 10, 10);
+  }
+  
+  .tick-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle; /* Align tick icon with text */
+  }
+  
+  
+   .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .tab {
+    margin: 0 15px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-bottom: 3px solid transparent;
+    color: #333;
+  }
+  .tab.active {
+    color: #ff6600;
+    border-bottom: 3px solid #ff6600;
+  }
+  .content {
+    margin-top: 20px;
+  }
+  .item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .item-icon {
+    font-size: 24px;
+    color: green;
+    margin-right: 15px;
+  }
+  .item-text {
+    font-size: 16px;
+    color: #555;
+  }
+  .item-text strong {
+    color: #333;
+  }
+  a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  } 
+
+
+
+  /* ::ng-deep .p-tabview .p-tabview-nav li {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  ::ng-deep .p-tabview .p-tabview-nav li:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  
+  ::ng-deep .p-tabview .p-tabview-panel {
+    padding: 1rem;
+  }
+  
+  .content {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .content ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .content li {
+    padding: 0.5rem;
+    margin-bottom: 10px;
+  } */
+  
